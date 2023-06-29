@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profit and Loss Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Profit and Loss Calculator</h1>
+    </header>
+    <main>
+      <div class="container">
+        <label for="cp">What is the cost price</label>
+        <input type="number" name="cp" id="cp" />
+        <label for="sp">What is your selling price</label>
+        <input type="number" name="sp" id="sp" />
+
+        <button id="btn" onclick="calculate()">Calculate</button>
+        <button id="reset" class="reset-btn" onclick="window.location.reload()">
+          Reset
+        </button>
+        <p id="result"></p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
